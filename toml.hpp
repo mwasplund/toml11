@@ -33,6 +33,12 @@
 #    error "toml11 requires C++11 or later."
 #endif
 
+#ifdef SOUP_BUILD
+  #define SOUP_EXPORT export
+#else
+  #define SOUP_EXPORT
+#endif
+
 #include "toml/parser.hpp"
 #include "toml/literal.hpp"
 #include "toml/serializer.hpp"
