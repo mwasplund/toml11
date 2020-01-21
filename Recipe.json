@@ -1,8 +1,5 @@
 {
-  "name": "toml11",
-  "version": "1.0.0",
-  "dependencies": [
-  ],
-  "public": "toml.cpp",
-  "source": []
+  "Name": "toml11",
+  "Version": "1.0.0",
+  "Public": "toml.cpp"
 }
