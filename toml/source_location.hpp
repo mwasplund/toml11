@@ -3,7 +3,9 @@
 #ifndef TOML11_SOURCE_LOCATION_HPP
 #define TOML11_SOURCE_LOCATION_HPP
 #include "region.hpp"
+#ifndef SOUP_BUILD
 #include <cstdint>
+#endif
 
 namespace toml
 {

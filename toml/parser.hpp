@@ -8,9 +8,11 @@
 #include "lexer.hpp"
 #include "types.hpp"
 #include "value.hpp"
+#ifndef SOUP_BUILD
 #include <fstream>
 #include <sstream>
 #include <cstring>
+#endif
 
 namespace toml
 {

@@ -3,6 +3,7 @@
 #ifndef TOML11_RESULT_HPP
 #define TOML11_RESULT_HPP
 #include "traits.hpp"
+#ifndef SOUP_BUILD
 #include <type_traits>
 #include <stdexcept>
 #include <utility>
@@ -10,6 +11,7 @@
 #include <string>
 #include <sstream>
 #include <cassert>
+#endif
 
 namespace toml
 {

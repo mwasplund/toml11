@@ -6,8 +6,10 @@
 #include "string.hpp"
 #include "traits.hpp"
 #include "comments.hpp"
+#ifndef SOUP_BUILD
 #include <vector>
 #include <unordered_map>
+#endif
 
 namespace toml
 {

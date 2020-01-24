@@ -2,6 +2,7 @@
 // Distributed under the MIT License.
 #ifndef TOML11_DATETIME_HPP
 #define TOML11_DATETIME_HPP
+#ifndef SOUP_BUILD
 #include <chrono>
 #include <tuple>
 #include <array>
@@ -10,6 +11,7 @@
 #include <cstdint>
 #include <cstdlib>
 #include <ctime>
+#endif
 
 namespace toml
 {

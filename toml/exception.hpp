@@ -3,8 +3,10 @@
 #ifndef TOML11_EXCEPTION_HPP
 #define TOML11_EXCEPTION_HPP
 #include "source_location.hpp"
+#ifndef SOUP_BUILD
 #include <stdexcept>
 #include <string>
+#endif
 
 namespace toml
 {

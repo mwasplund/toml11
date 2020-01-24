@@ -11,7 +11,9 @@
 #include "types.hpp"
 #include "source_location.hpp"
 #include "comments.hpp"
+#ifndef SOUP_BUILD
 #include <cassert>
+#endif
 
 namespace toml
 {

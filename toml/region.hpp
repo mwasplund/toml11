@@ -2,6 +2,7 @@
 // Distributed under the MIT License.
 #ifndef TOML11_REGION_HPP
 #define TOML11_REGION_HPP
+#ifndef SOUP_BUILD
 #include <memory>
 #include <vector>
 #include <algorithm>
@@ -9,6 +10,7 @@
 #include <iterator>
 #include <iomanip>
 #include <cassert>
+#endif
 #include "color.hpp"
 
 namespace toml

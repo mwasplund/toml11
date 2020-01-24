@@ -3,10 +3,12 @@
 #ifndef TOML11_LEXER_HPP
 #define TOML11_LEXER_HPP
 #include "combinator.hpp"
+#ifndef SOUP_BUILD
 #include <stdexcept>
 #include <istream>
 #include <sstream>
 #include <fstream>
+#endif
 
 namespace toml
 {

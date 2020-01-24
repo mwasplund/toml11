@@ -2,6 +2,7 @@
 // Distributed under the MIT License.
 #ifndef TOML11_TRAITS_HPP
 #define TOML11_TRAITS_HPP
+#ifndef SOUP_BUILD
 #include <type_traits>
 #include <utility>
 #include <chrono>
@@ -12,6 +13,7 @@
 #include <string_view>
 #endif // has_include(<string_view>)
 #endif // cplusplus   >= C++17
+#endif
 
 namespace toml
 {

@@ -4,8 +4,10 @@
 #define TOML11_SERIALIZER_HPP
 #include "value.hpp"
 #include "lexer.hpp"
+#ifndef SOUP_BUILD
 #include <limits>
 #include <cstdio>
+#endif
 
 namespace toml
 {

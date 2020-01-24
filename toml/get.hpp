@@ -5,7 +5,9 @@
 #include "from.hpp"
 #include "result.hpp"
 #include "value.hpp"
+#ifndef SOUP_BUILD
 #include <algorithm>
+#endif
 
 namespace toml
 {

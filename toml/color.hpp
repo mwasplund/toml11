@@ -1,7 +1,9 @@
 #ifndef TOML11_COLOR_HPP
 #define TOML11_COLOR_HPP
+#ifndef SOUP_BUILD
 #include <ostream>
 #include <cstdint>
+#endif
 
 #ifdef TOML11_COLORIZE_ERROR_MESSAGE
 #define TOML11_ERROR_MESSAGE_COLORIZED true

@@ -6,6 +6,7 @@
 #include "result.hpp"
 #include "utility.hpp"
 #include "region.hpp"
+#ifndef SOUP_BUILD
 #include <type_traits>
 #include <iterator>
 #include <limits>
@@ -14,6 +15,7 @@
 #include <cstdio>
 #include <cassert>
 #include <cctype>
+#endif
 
 // they scans characters and returns region if it matches to the condition.
 // when they fail, it does not change the location.
