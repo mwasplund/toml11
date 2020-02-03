@@ -1,5 +1,0 @@
-{
-  "name": "toml11",
-  "version": "1.0.0",
-  "public": "toml.cpp"
-}
