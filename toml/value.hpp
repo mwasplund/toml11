@@ -242,7 +242,7 @@ struct switch_cast<value_t::table>
 
 }// detail
 
-template<typename Comment, // discard/preserve_comment
+SOUP_EXPORT template<typename Comment, // discard/preserve_comment
          template<typename ...> class Table = std::unordered_map,
          template<typename ...> class Array = std::vector>
 class basic_value

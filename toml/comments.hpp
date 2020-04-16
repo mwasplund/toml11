@@ -28,7 +28,7 @@ struct discard_comments; // forward decl
 //     toml::parse<toml::preserve_comments>("example.toml");
 //
 // the interface is almost the same as std::vector<std::string>.
-struct preserve_comments
+SOUP_EXPORT struct preserve_comments
 {
     // `container_type` is not provided in discard_comments.
     // do not use this inner-type in a generic code.
@@ -202,7 +202,7 @@ inline void swap(std::vector<std::string>& lhs, preserve_comments& rhs)
     return;
 }
 
-template<typename charT, typename traits>
+SOUP_EXPORT template<typename charT, typename traits>
 std::basic_ostream<charT, traits>&
 operator<<(std::basic_ostream<charT, traits>& os, const preserve_comments& com)
 {

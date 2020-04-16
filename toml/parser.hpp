@@ -1993,7 +1993,7 @@ result<Value, std::string> parse_toml_file(location<Container>& loc)
 
 } // detail
 
-template<typename                     Comment = ::toml::discard_comments,
+SOUP_EXPORT template<typename                     Comment = ::toml::discard_comments,
          template<typename ...> class Table   = std::unordered_map,
          template<typename ...> class Array   = std::vector>
 basic_value<Comment, Table, Array>
@@ -2044,7 +2044,7 @@ parse(std::istream& is, const std::string& fname = "unknown file")
     return data.unwrap();
 }
 
-template<typename                     Comment = ::toml::discard_comments,
+SOUP_EXPORT template<typename                     Comment = ::toml::discard_comments,
          template<typename ...> class Table   = std::unordered_map,
          template<typename ...> class Array   = std::vector>
 basic_value<Comment, Table, Array> parse(const std::string& fname)

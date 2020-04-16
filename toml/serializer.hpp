@@ -723,7 +723,7 @@ showcomment(std::basic_ostream<charT, traits>& os)
     return os;
 }
 
-template<typename charT, typename traits, typename C,
+SOUP_EXPORT template<typename charT, typename traits, typename C,
          template<typename ...> class M, template<typename ...> class V>
 std::basic_ostream<charT, traits>&
 operator<<(std::basic_ostream<charT, traits>& os, const basic_value<C, M, V>& v)

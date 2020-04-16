@@ -706,7 +706,7 @@ inline bool operator< (const none_t&, const none_t&) noexcept {return false;}
 inline bool operator<=(const none_t&, const none_t&) noexcept {return true;}
 inline bool operator> (const none_t&, const none_t&) noexcept {return false;}
 inline bool operator>=(const none_t&, const none_t&) noexcept {return true;}
-template<typename charT, typename traitsT>
+SOUP_EXPORT template<typename charT, typename traitsT>
 std::basic_ostream<charT, traitsT>&
 operator<<(std::basic_ostream<charT, traitsT>& os, const none_t&)
 {

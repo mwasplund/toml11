@@ -11,7 +11,7 @@
 namespace toml
 {
 
-struct exception : public std::exception
+SOUP_EXPORT struct exception : public std::exception
 {
   public:
     exception(const source_location& loc): loc_(loc) {}
@@ -23,7 +23,7 @@ struct exception : public std::exception
     source_location loc_;
 };
 
-struct syntax_error : public toml::exception
+SOUP_EXPORT struct syntax_error : public toml::exception
 {
   public:
     explicit syntax_error(const std::string& what_arg, const source_location& loc)
@@ -36,7 +36,7 @@ struct syntax_error : public toml::exception
     std::string what_;
 };
 
-struct type_error : public toml::exception
+SOUP_EXPORT struct type_error : public toml::exception
 {
   public:
     explicit type_error(const std::string& what_arg, const source_location& loc)
@@ -49,7 +49,7 @@ struct type_error : public toml::exception
     std::string what_;
 };
 
-struct internal_error : public toml::exception
+SOUP_EXPORT struct internal_error : public toml::exception
 {
   public:
     explicit internal_error(const std::string& what_arg, const source_location& loc)

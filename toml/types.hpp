@@ -20,7 +20,7 @@ template<typename Comment, // discard/preserve_comment
 class basic_value;
 
 using character = char;
-using key = std::string;
+SOUP_EXPORT using key = std::string;
 
 using boolean        = bool;
 using integer        = std::int64_t;
@@ -39,7 +39,7 @@ using floating       = double; // "float" is a keyward, cannot use it here.
 // using array = typename value::array_type;
 // using table = typename value::table_type;
 
-enum class value_t : std::uint8_t
+SOUP_EXPORT enum class value_t : std::uint8_t
 {
     empty           =  0,
     boolean         =  1,
@@ -54,7 +54,7 @@ enum class value_t : std::uint8_t
     table           = 10,
 };
 
-template<typename charT, typename traits>
+SOUP_EXPORT template<typename charT, typename traits>
 inline std::basic_ostream<charT, traits>&
 operator<<(std::basic_ostream<charT, traits>& os, value_t t)
 {
