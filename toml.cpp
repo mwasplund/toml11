@@ -6,6 +6,7 @@ module;
 #include <chrono>
 #include <iomanip>
 #include <fstream>
+#include <memory>
 #include <sstream>
 #include <unordered_map>
 #include <vector>
