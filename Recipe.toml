@@ -1,3 +1,4 @@
 Name = "toml11"
-Version = "1.0.0"
-Public = "toml.cpp"
+Language = "C++"
+Version = "1.0.1"
+Interface = "toml.cpp"
